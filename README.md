@@ -55,8 +55,9 @@ A backend service that fetches real TV show data from the OMDb API, stores it in
 ```
 
 4. Create a `.env` file in the root folder with your own OMDb API key:
-
+```
 OMDB_API_KEY=your_key_here
+```
 Get a free key at [omdbapi.com](https://www.omdbapi.com/apikey.aspx)
 
 5. Run the server
