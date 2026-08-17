@@ -36,27 +36,34 @@ A backend service that fetches real TV show data from the OMDb API, stores it in
 
 1. Clone the repo
 
-git clone https://github.com/arijit-sh/tv-show-scraper-api.git
-cd tv-show-scraper-api
+```bash
+   git clone https://github.com/arijit-sh/tv-show-scraper-api.git
+   cd tv-show-scraper-api
+```
 
 2. Create and activate a virtual environment
 
-py -m venv venv
-venv\Scripts\activate
+```bash
+   py -m venv venv
+   venv\Scripts\activate
+```
 
 3. Install dependencies
 
-pip install -r requirements.txt
+```bash
+   pip install -r requirements.txt
+```
 
 4. Create a `.env` file in the root folder with your own OMDb API key:
 
 OMDB_API_KEY=your_key_here
-
 Get a free key at [omdbapi.com](https://www.omdbapi.com/apikey.aspx)
 
 5. Run the server
 
-uvicorn main:app --reload
+```bash
+   uvicorn main:app --reload
+```
 
 6. Open `http://127.0.0.1:8000/docs` to test the API interactively
 
